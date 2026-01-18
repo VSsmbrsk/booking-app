@@ -1,8 +1,7 @@
 import { createReduxHistoryContext } from "redux-first-history";
-import { createBrowserHistory } from "history";
+import { createHashHistory } from "history";
 
 export const { routerReducer, routerMiddleware, createReduxHistory } =
   createReduxHistoryContext({
-    history: createBrowserHistory(),
-    basename: "/booking-app",
+    history: createHashHistory(),
   });
