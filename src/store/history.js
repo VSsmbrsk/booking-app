@@ -1,9 +1,8 @@
 import { createReduxHistoryContext } from "redux-first-history";
-
 import { createBrowserHistory } from "history";
+
 export const { routerReducer, routerMiddleware, createReduxHistory } =
   createReduxHistoryContext({
     history: createBrowserHistory(),
-
-    basename: import.meta.env.BASE_URL.replace(/\/$/, ""),
+    basename: "/booking-app",
   });
